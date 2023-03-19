@@ -1,0 +1,29 @@
+.sobre-mim {
+    display: flex;
+    align-items: center;
+    padding: 140px 100px 10px 100px;
+    gap: 50px;
+  }
+  
+  .img-sobre-mim {
+    height: 400px;
+  }
+  
+  .sobre-mim-info {
+    color: #f1f1f1;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sobre-mim-titulo {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 30px;
+  }
+  
+  .sobre-mim-texto {
+    line-height: 1.3;
+  }

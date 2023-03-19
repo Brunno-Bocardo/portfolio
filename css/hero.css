@@ -1,0 +1,57 @@
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 180px 180px 20px 180px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .hero .hero-titulo {
+    font-family: "Roboto Slab", "Poppins";
+    font-weight: 800;
+    color: #f1f1f1;
+    font-size: 50px;
+    line-height: 1.1;
+  }
+  
+  .hero .hero-subtitulo {
+    font-family: "Roboto Slab", "Poppins";
+    font-weight: 700;
+    color: #8d9c9d;
+    font-size: 40px;
+    padding-top: 15px;
+  }
+  
+  .hero .hero-texto {
+    padding-top: 15px;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #f1f1f1;
+    padding-right: 50px;
+  }
+  
+  .hero .hero-img {
+    height: 350px;
+  }
+  
+  .seta {
+    padding-top: 30px ;
+    position: relative;
+    display: block;
+    text-align: center;
+    animation: flecha 0.7s infinite alternate ease-in-out;
+  }
+  
+  .seta-img {
+    height: 30px;
+  }
+  
+  @keyframes flecha {
+    0% {
+      -webkit-transform: translateY(0);
+      opacity: 0.4;
+    }
+    100% {
+      -webkit-transform: translateY(0.4em);
+      opacity: 0.9;
+    }
+  }
