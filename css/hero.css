@@ -1,57 +1,122 @@
 .hero {
-    display: flex;
-    align-items: center;
-    padding: 180px 180px 20px 180px;
-    font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  padding: 180px 180px 20px 180px;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero .hero-titulo {
+  font-family: "Roboto Slab", "Poppins";
+  font-weight: 800;
+  color: #f1f1f1;
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.hero .hero-subtitulo {
+  font-family: "Roboto Slab", "Poppins";
+  font-weight: 700;
+  color: #8d9c9d;
+  font-size: 40px;
+  padding-top: 15px;
+}
+
+.hero .hero-texto {
+  padding-top: 15px;
+  font-size: 17px;
+  line-height: 1.3;
+  color: #f1f1f1;
+  padding-right: 50px;
+}
+
+.hero .hero-img {
+  height: 350px;
+}
+
+.seta {
+  padding-top: 30px;
+  position: relative;
+  display: block;
+  text-align: center;
+  animation: flecha 0.7s infinite alternate ease-in-out;
+}
+
+.seta-img {
+  height: 30px;
+}
+
+@keyframes flecha {
+  0% {
+    -webkit-transform: translateY(0);
+    opacity: 0.4;
   }
-  
-  .hero .hero-titulo {
-    font-family: "Roboto Slab", "Poppins";
-    font-weight: 800;
-    color: #f1f1f1;
-    font-size: 50px;
-    line-height: 1.1;
+  100% {
+    -webkit-transform: translateY(0.4em);
+    opacity: 0.9;
   }
-  
-  .hero .hero-subtitulo {
-    font-family: "Roboto Slab", "Poppins";
-    font-weight: 700;
-    color: #8d9c9d;
-    font-size: 40px;
-    padding-top: 15px;
+}
+
+@media (max-width: 1750px) {
+  .hero {
+    padding: 160px 150px 20px 150px;
   }
-  
-  .hero .hero-texto {
-    padding-top: 15px;
-    font-size: 17px;
-    line-height: 1.3;
-    color: #f1f1f1;
-    padding-right: 50px;
+}
+
+@media (max-width: 1015px) {
+  .hero {
+    padding: 120px 100px 10px 100px;
   }
-  
+}
+
+@media (max-width: 975px) {
+  .hero {
+    padding: 120px 90px 10px 90px;
+  }
+}
+
+@media (max-width: 955px) {
+  .hero {
+    padding: 120px 50px 10px 50px;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero {
+    flex-direction: row-reverse;
+    padding: 160px 50px 20px 50px;
+  }
+
   .hero .hero-img {
-    height: 350px;
+    height: 200px;
   }
-  
+
+  .hero .hero-titulo {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .hero .hero-subtitulo {
+    font-size: 25px;
+    padding-top: 5px;
+  }
+
+  .hero-info {
+    padding-left: 50px;
+  }
+
+  .hero .hero-texto {
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 1.1;
+    color: #f1f1f1;
+    padding-right: 0;
+  }
+
   .seta {
-    padding-top: 30px ;
+    padding-top: 80px;
     position: relative;
     display: block;
     text-align: center;
     animation: flecha 0.7s infinite alternate ease-in-out;
   }
-  
-  .seta-img {
-    height: 30px;
-  }
-  
-  @keyframes flecha {
-    0% {
-      -webkit-transform: translateY(0);
-      opacity: 0.4;
-    }
-    100% {
-      -webkit-transform: translateY(0.4em);
-      opacity: 0.9;
-    }
-  }
+}

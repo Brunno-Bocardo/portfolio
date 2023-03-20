@@ -1,150 +1,211 @@
 .projetos {
-    color: #f1f1f1;
-    font-size: 17px;
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding-top: 140px;
-  }
-  
-  .projetos-titulo {
-    font-size: 40px;
-    font-weight: 700;
-    padding-bottom: 40px;
-  }
-  
+  color: #f1f1f1;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 140px;
+}
+
+.projetos-titulo {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 16px;
+}
+
+.flip-card-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #b9074c, #f5b04b);
+}
+
+.flip-card-front img,
+.flip-card-back img {
+  margin-top: 1rem;
+}
+
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-image: linear-gradient(315deg, #b9074c, #f5b04b);
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+/*MANGO BOOKS ----------------------*/
+.imgBack-mangoBooks {
+  height: 55px;
+  width: 80px;
+}
+.imgFront-mangoBooks {
+  padding-right: 30px;
+  height: 200px;
+}
+
+/*Projeto ----------------------*/
+/*Projeto ----------------------*/
+/*Projeto ----------------------*/
+/*Projeto ----------------------*/
+/*Projeto ----------------------*/
+
+.card-titulo {
+  font-family: "Roboto Slab", "Poppins";
+  font-size: 24px;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-btn {
+  color: #f1f1f1;
+  padding: 5px 20px;
+  border: solid 0.3px #f1f1f1;
+  border-radius: 15px;
+  text-decoration: none;
+}
+
+.flip-card-back h3 {
+  margin-bottom: 0.3rem;
+}
+
+.projetos-container {
+  z-index: 0;
+}
+
+.projetos-cards {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.conjunto {
+  display: flex;
+  gap: 50px;
+  flex-direction: row;
+}
+
+#secundario {
+  display: none;
+}
+
+#projetos-btn {
+  cursor: pointer;
+  background-color: #45373e;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+  padding: 10px 416px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: solid 0.5px #f1f1f1;
+  font-size: 16px;
+}
+
+#projetos-btn:hover {
+  box-shadow: 0px 0px 25px -6px rgba(245, 176, 75, 1);
+}
+
+@media (max-width: 970px) {
   .flip-card {
-    background-color: transparent;
-    width: 280px;
-    height: 280px;
-    perspective: 1000px;
-    
+    width: 260px;
+    height: 260px;
   }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
+  #projetos-btn {
+    padding: 10px 250px;
   }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+}
+
+@media (max-width: 915px) {
+  .flip-card {
+    width: 240px;
+    height: 240px;
   }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 16px;
+  #projetos-btn {
+    padding: 10px 250px;
   }
-  
-  .flip-card-front {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(
-      45deg, #b9074c, #f5b04b
-    );
+  .conjunto {
+    gap: 15px;
   }
-  
-  .flip-card-front img, .flip-card-back img {
-    margin-top: 1rem;
-  }
-  
-  .flip-card-back {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+@media (max-width: 790px) {
+  .projetos {
+    font-size: 15px;
     gap: 10px;
-    background-image: linear-gradient(
-      315deg,  #b9074c, #f5b04b
-    );
-    color: #fff;
-    transform: rotateY(180deg);
+    padding-top: 100px;
   }
-  
-  /*MANGO BOOKS ----------------------*/
+
+  .flip-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  #projetos-btn {
+    padding: 10px 150px;
+  }
+
   .imgBack-mangoBooks {
-    height: 55px;
-    width: 80px;
+    height: 30px;
+    width: 40px;
   }
   .imgFront-mangoBooks {
     padding-right: 30px;
-    height: 200px;
+    height: 140px;
   }
-  
-  /*Projeto ----------------------*/
-  /*Projeto ----------------------*/
-  /*Projeto ----------------------*/
-  /*Projeto ----------------------*/
-  /*Projeto ----------------------*/
-  
+
+  .flip-card-front .img-emBreve, .flip-card-back .img-emBreve {
+    height: 120px;
+    width: 120px;
+  }
+
   .card-titulo {
-    font-family: "Roboto Slab", "Poppins";
-    font-size: 24px;
+    font-size: 22px;
   }
-  
-  .card-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+
   .card-btn {
-    color: #f1f1f1;
-    padding: 5px 20px;
-    border: solid 0.3px #f1f1f1;
-    border-radius: 15px;
-    text-decoration: none;
+    padding: 5px 10px;
   }
-  
-  .flip-card-back h3 {
-    margin-bottom: 0.3rem;
-  }
-  
-  .projetos-container {
-    z-index: 0;
-  } 
-  
-  .projetos-cards {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    flex-direction: column;
-    width: 1000px;
-  }
-  
+
   .conjunto {
-    display: flex;
-    gap: 50px;
-    flex-direction: row;
+    gap: 15px;
   }
-  
-  #secundario {
-    display: none;
-  }
-  
-  #projetos-btn {
-    cursor: pointer;
-    background-color: #45373e;
-    color: #f1f1f1;
-    font-family: "Poppins", sans-serif;
-    transition: 0.3s ease-in-out;
-    padding: 10px 416px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: solid 0.5px #f1f1f1;
-    font-size: 16px;
-  }
-  
-  #projetos-btn:hover {
-    box-shadow: 0px 0px 25px -6px rgba(245,176,75,1);
-  }
-  
+}

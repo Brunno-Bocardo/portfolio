@@ -1,70 +1,248 @@
 .cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0;
-    color: #f1f1f1;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  
-  .icons-cabecalho {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-  }
-  
-  .icons-cabecalho i {
-    font-size: 20px;
-    color: #f1f1f1;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.icons-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.icons-cabecalho i {
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.cabecalho .logo {
+  height: 70px;
+  padding-left: 100px;
+}
+
+.cabecalho .lista .itens-cabecalho {
+  display: flex;
+  gap: 40px;
+  padding-right: 100px;
+  align-items: center;
+}
+
+.item {
+  text-decoration: none;
+  color: #f1f1f1;
+  display: inline-block;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: solid #45373e;
+}
+
+.item.vermelho:hover {
+  border-bottom: solid #e00b5b;
+}
+
+.item.amarelo:hover {
+  border-bottom: solid #f5b04b;
+}
+
+.cabecalho .lista .itens-cabecalho .item {
+  font-size: 18px;
+}
+
+.botao {
+  padding: 15px 20px;
+  background-color: #e00b5b;
+  border-radius: 20px;
+}
+
+.botao:hover {
+  padding: 15px 20px;
+  background-color: #b9074c;
+  border-radius: 20px;
+}
+
+/*MENU HAMBURGUER*/
+.menu-hide {
+  display: none;
+  width: 60px;
+  height: 60px;
+  align-self: flex-end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburguer {
+background-color: #f1f1f1;
+position: relative;
+display: block;
+width: 30px;
+height: 2px;
+top: 29px;
+left: 15px;
+transition: 0.5s ease-in-out;
+}
+
+.hamburguer::after, .hamburguer::before {
+background-color: #f1f1f1;
+content: "";
+display: block;
+width: 100%;
+height: 100%;
+position: absolute;
+transition: 0.2s ease-in-out;
+}
+
+.hamburguer::after {
+bottom: -10px;
+}
+
+.hamburguer::before {
+top: -10px;
+}
+
+input {
+display: none;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+ input:checked ~ label .hamburguer::before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+ input:checked ~ label .hamburguer::after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+@media (max-width: 1050px) {
   .cabecalho .logo {
-    height: 70px;
-    padding-left: 100px;
+    padding-left: 50px;
   }
-  
+
   .cabecalho .lista .itens-cabecalho {
-    display: flex;
-    gap: 40px;
-    padding-right: 100px;
-    align-items: center;
+    padding-right: 50px;
   }
-  
-  .item {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    position: relative;
-    padding: 10px 0;
-    border-bottom: solid #45373e;
+}
+
+@media (max-width: 975px) {
+  .cabecalho .logo {
+    padding-left: 50px;
   }
-  
-  .item.vermelho:hover {
-    border-bottom: solid #e00b5b;
+
+  .cabecalho .lista .itens-cabecalho {
+    padding-right: 50px;
   }
-  
-  .item.amarelo:hover {
-    border-bottom: solid #f5b04b;
+
+  .icons-cabecalho a {
+    display: none;
   }
-  
-  .cabecalho .lista .itens-cabecalho .item {
+}
+
+@media (max-width: 840px) {
+  .icons-cabecalho {
+    gap: 20px;
+  }
+
+  .icons-cabecalho i {
     font-size: 18px;
   }
-  
+
+  .cabecalho .logo {
+    height: 60px;
+    padding-left: 30px;
+  }
+
+  .cabecalho .lista .itens-cabecalho {
+    gap: 25px;
+    padding-right: 30px;
+  }
+
+  .cabecalho .lista .itens-cabecalho .item {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  .icons-cabecalho {
+    gap: 20px;
+  }
+
+  .icons-cabecalho i {
+    font-size: 15px;
+  }
+
+  .cabecalho .logo {
+    height: 60px;
+    padding-left: 30px;
+  }
+
+  .cabecalho .lista .itens-cabecalho {
+    gap: 25px;
+    padding-right: 30px;
+  }
+
+  .cabecalho .lista .itens-cabecalho .item {
+    font-size: 15px;
+  }
+
   .botao {
-    padding: 15px 20px;
-    background-color: #e00b5b;
-    border-radius: 20px;
+    padding: 10px 10px;
   }
-  
+
   .botao:hover {
-    padding: 15px 20px;
-    background-color: #b9074c;
-    border-radius: 20px;
+    padding: 10px 10px;
   }
+}
+
+@media (max-width: 650px) {
+  .icons-cabecalho a {
+    display: flex;
+    padding-left: 20px;
+  }
+
+  .menu-hide {
+    display: block;
+  }
+
+  header .cabecalho .lista .itens-cabecalho {
+    display: none;
+  }
+
+  #menu-hamburguer:checked ~ header{
+    background-color: #b9074c;
+  }
+
+  header nav {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  header nav ul {
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+  }
+
+  header nav ul a {
+    text-align: center;
+    padding: 20px;
+    display: block;
+  }
+}
