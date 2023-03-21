@@ -144,6 +144,12 @@
   box-shadow: 0px 0px 25px -6px rgba(245, 176, 75, 1);
 }
 
+/*TEMPORÁRIO*/
+.img-emBreve {
+  width: 200px;
+  height: 200px;
+}
+
 @media (max-width: 970px) {
   .flip-card {
     width: 260px;
@@ -207,5 +213,24 @@
 
   .conjunto {
     gap: 15px;
+  }
+}
+
+@media (max-width: 670px) {
+  .conjunto {
+    flex-direction: column;
+  }
+  .flip-card {
+    width: 250px;
+    height: 250px;
+  }
+  #projetos-btn {
+    padding: 10px 70px;
+  }
+}
+
+@media (max-width: 510px) {
+  .projetos-titulo {
+    font-size: 35px;
   }
 }

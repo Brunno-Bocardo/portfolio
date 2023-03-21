@@ -16,6 +16,7 @@
 }
 html, body, header, section {
 	background-color: #45373e;
+	overflow-x: hidden;
 }
 html {
 	scroll-behavior: smooth;

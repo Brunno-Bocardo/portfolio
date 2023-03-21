@@ -64,3 +64,18 @@
     color: #f1f1f1;
   }
 }
+
+@media (max-width: 560px) {
+  .contato-titulo {
+    text-align: center;
+  }
+  .contato {
+    padding: 100px 30px;
+  }
+}
+
+@media (max-width: 510px) {
+  .contato-titulo {
+    font-size: 35px;
+  }
+}

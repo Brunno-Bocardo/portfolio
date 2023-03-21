@@ -72,4 +72,7 @@ mostrarHTML.addEventListener("mouseover", function () {
   var significado = document.querySelector(".tecnologia-sobre");
   titulo.innerHTML = "Git";
   significado.innerHTML = "O Git é um sistema de controle de versão distribuído, o que significa que um clone local do projeto é um repositório de controle de versão completo. Esses repositórios locais totalmente funcionais facilitam o trabalho offline ou remotamente.";
-});                                
+});           
+
+/* MENU HAMBURGUER ------------------------------------------------------ */
+

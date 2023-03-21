@@ -1,7 +1,7 @@
 .hero {
   display: flex;
   align-items: center;
-  padding: 180px 180px 20px 180px;
+  padding: 200px 180px 20px 180px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .seta {
-  padding-top: 30px;
+  padding-top: 50px;
   position: relative;
   display: block;
   text-align: center;
@@ -76,47 +76,45 @@
 
 @media (max-width: 955px) {
   .hero {
-    padding: 120px 50px 10px 50px;
+    padding: 200px 50px 10px 50px;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 900px) {
   .hero {
-    flex-direction: row-reverse;
-    padding: 160px 50px 20px 50px;
+    padding: 100px 50px 10px 50px;
   }
+}
 
-  .hero .hero-img {
+@media (max-width: 840px) {
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px 40px 10px 40px;
+  }
+  .hero img{
+    padding-bottom: 30px;
+  }
+  #hero-img {
+    height: 240px;
+  }
+  .seta {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .hero-info .hero-titulo {
+    font-size: 35px;
+  } 
+  .hero-info .hero-subtitulo {
+    font-size: 28px;
+  }
+  #hero-img {
     height: 200px;
   }
-
-  .hero .hero-titulo {
-    font-size: 30px;
-    line-height: 1;
-  }
-
-  .hero .hero-subtitulo {
-    font-size: 25px;
-    padding-top: 5px;
-  }
-
-  .hero-info {
-    padding-left: 50px;
-  }
-
-  .hero .hero-texto {
-    padding-top: 10px;
+  .hero-info .hero-texto {
     font-size: 15px;
-    line-height: 1.1;
-    color: #f1f1f1;
-    padding-right: 0;
-  }
-
-  .seta {
-    padding-top: 80px;
-    position: relative;
-    display: block;
-    text-align: center;
-    animation: flecha 0.7s infinite alternate ease-in-out;
   }
 }

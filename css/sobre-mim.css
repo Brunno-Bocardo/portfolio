@@ -34,11 +34,32 @@
   }
   
   .sobre-mim {
-    padding: 100px 50px 10px 50px;
+    padding: 100px 40px 10px 40px;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 760px) {
+  .sobre-mim {
+    flex-direction: column-reverse;
+    padding: 120px 40px 10px 40px;
+  }
+  .img-sobre-mim {
+    display: none;
+  }
+}
+
+@media (max-width: 510px) {
+  .sobre-mim-titulo {
+    font-size: 35px;
+  }
+  .sobre-mim-texto {
+    font-size: 15px;
+  }
+}
+
+
+
+/* @media (max-width: 780px) {
   .img-sobre-mim {
     height: 200px;
   }
@@ -58,4 +79,4 @@
     font-size: 30px;
     padding-bottom: 20px;
   }
-}
+} */

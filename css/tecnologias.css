@@ -72,3 +72,31 @@ i:hover {
     font-family: "Roboto Slab", "Poppins";
   }
 }
+
+@media (max-width: 615px) {
+  .tecnologias-titulo {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .tecnologias-container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .tecnologias-icon {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 510px) {
+  .tecnologias-titulo {
+    font-size: 35px;
+  }
+  .tecnologia-nome {
+    font-size: 28px;
+  }
+  .tecnologias-sobre {
+    font-size: 15px;
+  }
+}

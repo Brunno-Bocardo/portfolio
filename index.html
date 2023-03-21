@@ -42,66 +42,59 @@
     <script type="text/javascript" src="js/index.js" defer></script>
   </head>
   <body>
-    <header>
-      <section class="cabecalho">
-        <figure class="icons-cabecalho">
-          <img src="img/logo-principal.png" alt="Logo" class="logo" />
-          <a href="https://www.linkedin.com/in/brunno-bocardo/" target="_blank"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/Brunno-Bocardo" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </figure>
-        
-        <nav class="lista">
-          <div class="menu-hide">
-            <input type="checkbox" id="menu-hamburguer" />
-            <label for="menu-hamburguer">
-              <div class="menu">
-                <span class="hamburguer"></span>
-              </div>
-            </label>
-          </div>
+    <header class="header">
+      <div class="header-container">
+        <a href="/"><img src="img/logo-principal.png" alt="Logo" class="logo"></a>
 
-          <ul class="itens-cabecalho">
-            <a href="#home"><li class="item amarelo">Home</li></a>
-            <a href="#sobre-mim"><li class="item vermelho">Sobre Mim</li></a>
-            <a href="#projetos"><li class="item amarelo">Projetos</li></a>
-            <a href="#tecnologias"><li class="item vermelho">Tecnologias</li></a>
-            <a href="#contato"><li class="item botao">Fale Comigo!</li></a>
+        <!-- MENU HAMBURGER -->
+        <nav>
+          <input type="checkbox" id="menu-hamburguer" />
+
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <!-- -------------- -->
+          <ul>        
+            <li><a href="#home" class="item amarelo">Home</a></li>
+            <li><a href="#sobre-mim" class="item vermelho">Sobre Mim</a></li>
+            <li><a href="#projetos" class="item amarelo">Projetos</a></li>
+            <li><a href="#tecnologias" class="item vermelho">Tecnologias</a></li>
+            <li><a href="#contato" class="item botao">Fale Comigo!</a></li>
           </ul>
         </nav>
-      </section>
+      </div>
     </header>
 
     <main>
-      <article class="hero" id="home">
-        <div class="hero-info">
-          <h1 class="hero-titulo">
-            Olá Mundo! <br /><span class="texto-automatico"></span>
-          </h1>
-          <h2 class="hero-subtitulo">Front-end Developer</h2>
-          <p class="hero-texto">
-            Seja muito bem vindo(a) ao meu portfólio! Sou um desenvolvedor
-            Front-end apaixonado por criar interfaces incríveis que conectam
-            pessoas e tecnologia. Utilizo habilidades técnicas, um olhar atento
-            ao design e a experiência do usuário, sempre buscando produzir
-            soluções criativas e eficientes para qualquer desafio.
-          </p>
+      <div class="pagina-inicial">
+        <article class="hero" id="home">
+          <div class="hero-info">
+            <h1 class="hero-titulo">
+              Olá Mundo! <br /><span class="texto-automatico"></span>
+            </h1>
+            <h2 class="hero-subtitulo">Front-end Developer</h2>
+            <p class="hero-texto">
+              Seja muito bem vindo(a) ao meu portfólio! Sou um desenvolvedor
+              Front-end apaixonado por criar interfaces incríveis que conectam
+              pessoas e tecnologia. Utilizo habilidades técnicas e um olhar atento
+              ao design para produzir soluções criativas e eficientes para qualquer desafio.
+            </p>
+          </div>
+          <img
+            id="hero-img"
+            class="hero-img"
+            src="img/desenho-brunno-principal.png"
+            alt="Desenho do Brunno gerado por inteligência Artificial"
+          />
+        </article>
+
+        <div class="seta">
+          <a href="#sobre-mim"
+            ><img src="img/seta.png" alt="seta" class="seta-img"
+          /></a>
         </div>
-
-        <img
-          class="hero-img"
-          src="img/desenho-brunno-principal.png"
-          alt="Desenho do Brunno gerado por inteligência Artificial"
-        />
-      </article>
-
-      <div class="seta">
-        <a href="#sobre-mim"
-          ><img src="img/seta.png" alt="seta" class="seta-img"
-        /></a>
       </div>
 
       <article class="sobre-mim" id="sobre-mim">
