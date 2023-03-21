@@ -93,6 +93,9 @@
     align-items: center;
     padding: 50px 40px 10px 40px;
   }
+  .hero .hero-texto {
+    padding-right: 0;
+  }
   .hero img{
     padding-bottom: 30px;
   }
@@ -105,6 +108,9 @@
 }
 
 @media (max-width: 510px) {
+  .hero {
+    padding: 50px 30px 10px 30px;
+  }
   .hero-info .hero-titulo {
     font-size: 35px;
   } 
