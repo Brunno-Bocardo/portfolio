@@ -5,8 +5,8 @@
 
 <br>
 <h2>Sobre o Projeto:</h2>
-<p>- Esse projeto se trata do meu portfólio pessoal. Aqui, as pessoas podem conhecer mais sobre mim e sobre os meus projetos. Pretendo atualizá-lo constantemente, além de trabalhar em novas versões</p>
-<p>- Eu fiz uso da tríade clássica do Front-End, HTML, CSS e JavaScript, além do uso das bibliotecas Type It e Font Awesome. O design é simples, mas consegui passar tudo o que eu queria de forma simples e minimalista. Além disso, o projeto é 100% responsivo.</p>
+<p>- Esse projeto se trata do meu portfólio pessoal. Aqui, as pessoas podem conhecer mais sobre mim e sobre os meus projetos. Pretendo atualizá-lo constantemente, além de trabalhar em novas versões.</p>
+<p>- Eu fiz uso da tríade clássica do Front-End, HTML, CSS e JavaScript, além do uso das bibliotecas Type It e Font Awesome. O design é simples, mas consegui passar tudo o que eu queria de forma organizada e minimalista. Além disso, o projeto é 100% responsivo.</p>
 
 
 <h2>Acesse Agora!</h2>
