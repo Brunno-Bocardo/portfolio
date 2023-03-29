@@ -128,20 +128,20 @@
 }
 
 #projetos-btn {
-  cursor: pointer;
-  background-color: #45373e;
+  text-decoration: none;
   color: #f1f1f1;
-  font-family: "Poppins", sans-serif;
-  transition: 0.3s ease-in-out;
-  padding: 10px 416px;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: solid 0.5px #f1f1f1;
-  font-size: 16px;
+  font-size: 20px;
+  padding: 15px 410px;
+  border-radius: 8px;
+  border: solid 0.4px #f1f1f1;
+  transition: 0.2s ease-in;
+  background-color: #45373e;
+  margin-top: 15px;
 }
 
 #projetos-btn:hover {
-  box-shadow: 0px 0px 25px -6px rgba(245, 176, 75, 1);
+  border: solid 0.4px #45373e;
+  background-color: #f5b04b;
 }
 
 /*TEMPORÁRIO*/
@@ -157,6 +157,9 @@
   }
   #projetos-btn {
     padding: 10px 250px;
+  }
+  .projetos-cards {
+    gap: 15px;
   }
 }
 
