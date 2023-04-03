@@ -40,11 +40,30 @@
   background-color: #e00b5b;
 }
 
+@media (min-width: 1500px) {
+  .contato {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contato-titulo {
+    font-size: 60px;
+  }
+
+  .contato-icons {
+    font-size: 70px;
+  }
+
+  .contato-cv {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 955px) {
   .contato {
     padding-top: 100px;
     padding-bottom: 100px;
-    
   }
 }
 

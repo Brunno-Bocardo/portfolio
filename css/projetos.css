@@ -150,6 +150,32 @@
   height: 200px;
 }
 
+@media (min-width: 2000px) {
+  .flip-card {
+    width: 350px;
+    height: 350px;
+  }
+
+  .card-titulo {
+    font-size: 32px;
+  }
+
+  .card-btn {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .projetos-titulo {
+    font-size: 60px;
+  }
+
+  #projetos-btn {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 970px) {
   .flip-card {
     width: 260px;

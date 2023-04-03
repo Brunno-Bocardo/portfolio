@@ -122,6 +122,16 @@
   bottom: 0;
 }
 
+@media (min-width: 1500px) {
+  .logo {
+    height: 100px;
+  }
+
+  .header nav ul li a {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 900px) {
   .logo {
     height: 50px;

@@ -40,6 +40,31 @@ i:hover {
   font-family: "Roboto Slab", "Poppins";
 }
 
+@media (min-width: 2000px) {
+  .tecnologias {
+    padding: 200px 300px 20px 300px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .tecnologias-titulo {
+    font-size: 60px;
+  }
+
+  .tecnologias-icon {
+    font-size: 70px;
+    gap: 25px;
+  }
+
+  .tecnologia-nome {
+    font-size: 50px;
+  }
+
+  .tecnologias-info {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 1075px) {
   .tecnologias {
     padding: 100px 50px 10px 50px;

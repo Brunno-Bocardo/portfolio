@@ -13,3 +13,9 @@ footer {
   .rodape-img {
     height: 80px;
   }
+
+  @media (min-width: 1500px) {
+    .rodape-img {
+      height: 150px;
+    }
+  }
