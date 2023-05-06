@@ -68,16 +68,26 @@
 }
 
 /*MANGO BOOKS ----------------------*/
-.imgBack-mangoBooks {
+.imgBack.mangoBooks {
   height: 55px;
   width: 80px;
 }
-.imgFront-mangoBooks {
+.imgFront.mangoBooks {
   padding-right: 30px;
   height: 200px;
 }
 
-/*Projeto ----------------------*/
+/*Github API ----------------------*/
+.imgFront.devicon-github-original {
+  font-size: 200px;
+  color: rgb(7, 0, 24);
+}
+.imgBack.devicon-github-original {
+  margin-top: 15px;
+  font-size: 55px;
+  color: rgb(7, 0, 24);
+}
+
 /*Projeto ----------------------*/
 /*Projeto ----------------------*/
 /*Projeto ----------------------*/
